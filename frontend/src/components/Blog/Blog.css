@@ -1,0 +1,139 @@
+/* Import Google Fonts for Hindi text */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+
+/* Styles for main blog container */
+.blog-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff; /* Light background for contrast */
+}
+
+/* Styles for individual blog cards */
+.blog {
+  width: 100%; /* Full width for each blog */
+  max-width: 750px; /* Max width to keep it readable */
+  padding: 20px;
+  margin-bottom: 20px; /* Added margin-bottom for better spacing between blogs */
+  border-radius: 20px;
+  background-image: url("../../img/AstroBackg1.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+}
+
+.blog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Background overlay for better text readability */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.blog:hover::before {
+  opacity: 0.7;
+}
+
+.blog:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Adjusted box shadow on hover */
+}
+
+/* Styles for blog ID */
+.blog-id {
+  position: absolute;
+  bottom: 10px; /* Bottom right corner */
+  right: 10px; /* Bottom right corner */
+  background-color: rgba(0, 0, 139, 0.7); /* Semi-transparent navy blue background */
+  color: #fffeb9; /* White text color */
+  padding: 5px 10px; /* Padding for the label */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size for the label */
+  font-weight: bold; /* Bold text */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow for better readability */
+  z-index: 3; /* Ensure the ID is above the overlay */
+}
+
+/* Styles for blog headings */
+.blog-heading {
+  color: #ffc800; /* Text color for heading */
+  font-size: 26px;
+  margin-bottom: 10px;
+  z-index: 2; /* Ensure text is above overlay */
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for blog details */
+.blog-detail {
+  color: #ffab45; /* Text color for detail */
+  font-size: 20px;
+  line-height: 1.8; /* Line spacing */
+  letter-spacing: 0.5px; /* Space between characters */
+  white-space: pre-wrap; /* Preserve spacing */
+  text-align: justify; /* Align text for better readability */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: height 0.3s ease;
+  z-index: 2; /* Ensure text is above overlay */
+  position: relative;
+  font-family: 'Noto Sans Devanagari', sans-serif; /* Apply Hindi font */
+}
+
+.blog-detail.expanded {
+  -webkit-line-clamp: unset;
+  height: auto;
+}
+
+/* Styles for Learn More button */
+.learn-more-button {
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  z-index: 3; /* Ensure the button is above the overlay */
+  position: relative; /* Ensure the button is positioned correctly */
+}
+
+.learn-more-button:hover {
+  background: white;
+  border: 1px solid #fdc50f;
+  color: #fdc50f;
+}
+
+/* Styles for heading */
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: url(/src/img/AstroBackg1.png);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .blog {
+    width: 95%; /* Adjusted width for better mobile view */
+    margin-bottom: 20px; /* Added margin-bottom for better spacing */
+  }
+}

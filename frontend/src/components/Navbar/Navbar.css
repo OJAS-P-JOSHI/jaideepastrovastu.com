@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Gumela;
+  src: url(../../fonts/Gumela.ttf);
+}
+
+:root {
+  --orange: #ffa500;
+  --black: #000000;
+  --gray: #808080;
+  --white: #ffffff;
+  --dark-bg: #000000;
+  --dark-text: #e0e0e0;
+  --dark-hover: #333333;
+  --dark-border: #555555;
+}
+
+.n-wrapper {
+  box-shadow: 0px 0.5px var(--orange);
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  z-index: 100;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.n-wrapper.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.n-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.n-name {
+  font-family: Gumela;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.n-wrapper.dark .n-name {
+  color: var(--dark-text);
+}
+
+.n-right {
+  display: flex;
+  align-items: center;
+}
+
+.n-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+}
+
+.n-list ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.n-list li {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: inherit;
+}
+
+.n-list li:hover {
+  color: var(--orange);
+}
+
+.n-list li::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--orange);
+  transition: width 0.3s;
+  width: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.n-list li:hover::after {
+  width: 100%;
+}
+
+.n-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--orange);
+  color: var(--white);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.n-button:hover {
+  background-color: darkorange;
+}
+
+.n-wrapper.dark .n-button {
+  background-color: var(--dark-hover);
+  color: var(--dark-text);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--black);
+  margin: 4px 0;
+  transition: all 0.3s;
+}
+
+.hamburger .line.open {
+  background-color: var(--orange);
+}
+
+@media screen and (max-width: 768px) {
+  .n-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .n-list.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    background-color: var(--white);
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .n-wrapper.dark .n-list.open {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+
+  .n-wrapper.dark .n-list li:hover {
+    color: var(--orange);
+  }
+
+  .n-wrapper.dark .hamburger .line {
+    background-color: var(--dark-text);
+  }
+
+  .n-wrapper.dark .hamburger .line.open {
+    background-color: var(--orange);
+  }
+
+  .n-name {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .n-name {
+    font-size: 1.6rem;
+  }
+
+  .n-list.open {
+    top: 12vh;
+    width: 100%;
+  }
+
+  .n-list ul {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .n-list li {
+    font-size: 1rem;
+  }
+}
