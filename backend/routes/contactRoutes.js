@@ -1,21 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const Contact = require('../models/Contact');
+const { createMessage } = require('../controllers/contactController');
 
-// Add a new contact message
-router.post('/', async (req, res) => {
-    const contact = new Contact({
-        name: req.body.name,
-        email: req.body.email,
-        message: req.body.message
-    });
-
-    try {
-        const newContact = await contact.save();
-        res.status(201).json(newContact);
-    } catch (err) {
-        res.status(400).json({ message: err.message });
-    }
-});
+router.post('/', createMessage);
 
 module.exports = router;
