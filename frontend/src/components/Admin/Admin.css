@@ -1,0 +1,149 @@
+/* General Styles */
+.admin-container {
+  padding: 20px;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.login-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Form */
+.blog-form-container,
+.blog-list-container,
+.message-list-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.blog-form-container h2,
+.blog-list-container h2,
+.message-list-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.blog-form-container label,
+.blog-list-container label,
+.message-list-container label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.blog-form-container input,
+.blog-form-container textarea,
+.blog-list-container input,
+.blog-list-container textarea,
+.message-list-container input,
+.message-list-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.blog-form-container button,
+.blog-list-container button,
+.message-list-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.blog-form-container button:hover,
+.blog-list-container button:hover,
+.message-list-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Blog List & Message List */
+.blog-item,
+.message-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item h3,
+.message-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.blog-item p,
+.message-item p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.blog-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.blog-item button:hover {
+  background-color: #c82333;
+}
