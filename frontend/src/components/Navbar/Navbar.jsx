@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   const navigateToServices = () => {
-    navigate("/service");
+    navigate("/services");
     setMenuOpen(false);
   };
 
@@ -49,7 +49,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="/service" onClick={(e) => { e.preventDefault(); navigateToServices(); }}>
+              <a href="/services" onClick={(e) => { e.preventDefault(); navigateToServices(); }}>
                 Services
               </a>
             </li>
