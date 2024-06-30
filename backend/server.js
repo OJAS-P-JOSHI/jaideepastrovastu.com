@@ -11,8 +11,20 @@ const adminRoutes = require('./routes/adminRoutes');
 
 const app = express();
 
+const allowedOrigins = [
+  'https://jaideepastrovastu-crf69oe91-ojas-p-joshis-projects.vercel.app',
+  'https://testjay.vercel.app',
+  'https://jaideepastrovastu-ojas-p-joshis-projects.vercel.app'
+];
+
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Update this to your Vercel URL
+  origin: (origin, callback) => {
+    if (allowedOrigins.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   optionsSuccessStatus: 200
 };
 
