@@ -1,33 +1,25 @@
-import React, { useContext } from "react";
-import { themeContext } from "../../Context";
+import React from "react";
 import "./Experience.css";
-import { motion } from "framer-motion";
 
 const Experience = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-
-  const transition = { duration: 1, type: "spring" };
+  const achievements = [
+    { value: "8+", label1: "years", label2: "Experience" },
+    { value: "20+", label1: "completed", label2: "Projects" },
+    { value: "5+", label1: "companies", label2: "Work" },
+    { value: "10+", label1: "skills", label2: "Mastered" },
+    { value: "15+", label1: "clients", label2: "Satisfied" },
+    { value: "7+", label1: "awards", label2: "Won" },
+    { value: "100+", label1: "hours", label2: "Training" },
+  ];
 
   return (
-    <div className="experience" id='experience'>
-      {[
-        { value: "8+", label1: "years", label2: "Experience" },
-        { value: "20+", label1: "completed", label2: "Projects" },
-        { value: "5+", label1: "companies", label2: "Work" },
-        { value: "More", label1: "", label2: "Info" }
-      ].map((achievement, index) => (
-        <motion.div
-          key={index}
-          className="achievement"
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={transition}
-        >
-          <div className="circle" style={{ color: darkMode ? 'var(--orange)' : '' }}>{achievement.value}</div>
-          <span style={{ color: darkMode ? 'white' : '' }}>{achievement.label1}</span>
-          <span>{achievement.label2}</span>
-        </motion.div>
+    <div className="experience" id="experience">
+      {achievements.map((achievement, index) => (
+        <div key={index} className="achievement">
+          <div className="circle">{achievement.value}</div>
+          <span className="label1">{achievement.label1}</span>
+          <span className="label2">{achievement.label2}</span>
+        </div>
       ))}
     </div>
   );

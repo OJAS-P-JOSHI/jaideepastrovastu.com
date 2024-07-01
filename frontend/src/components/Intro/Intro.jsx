@@ -2,7 +2,7 @@ import React from "react";
 import "./Intro.css";
 import Astrology from "../../img/Astrology.png";
 import { motion } from "framer-motion";
-import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF } from "@iconscout/react-unicons";
+import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF, UilStar, UilHeart, UilBalanceScale } from "@iconscout/react-unicons";
 
 const Intro = () => {
   const transition = { duration: 3, type: "spring" };
@@ -13,8 +13,11 @@ const Intro = () => {
         <div className="i-name">
           <span>Jai Mahakal</span>
           <span>Hello, I am Jaideep Sharma, your cosmic guide and dedicated astrologer</span>
-          <span>Astrology is the ancient science of self-discovery, helping us realize our true potential and purpose in this earthly existence.</span>
-          <span>ज्योतिष आत्म-खोज का प्राचीन विज्ञान है, जो हमें इस भौतिक अस्तित्व में हमारी वास्तविक क्षमता और उद्देश्य को समझने में मदद करता है।</span>
+          <div className="i-details">
+            <span><UilStar size="20" color="#4e4e4e" /> Jyotish uses nakshatras and rashis to understand your life path</span>
+            <span><UilHeart size="20" color="#4e4e4e" /> Nakshatras and rashis in Jyotish influence your personality and relationships</span>
+            <span><UilBalanceScale size="20" color="#4e4e4e" /> Jyotish performs shantis to balance your doshas and overcome planetary afflictions</span>
+          </div>
         </div>
         <a href="/contact-now">
           <button className="button i-button">Appointment</button>

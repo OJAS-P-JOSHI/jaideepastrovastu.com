@@ -1,8 +1,9 @@
 :root {
   --orange: #ff8c00;
-  --card-color-light: #fff;
-  --text-color-light: #000;
-  --border-color-light: darkblue;
+  --yellow: #FFD700;
+  --white: #ffffff;
+  --light-gray: #fff7dd;
+  --dark-red: #8B0000;
   --purple: rgba(128, 0, 128, 0.3);
   --boxShadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -13,7 +14,7 @@
   padding: 0;
 }
 
-.services {
+.servicesz {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,20 +22,18 @@
   position: relative;
   flex-direction: column;
   margin-bottom: 4rem;
+  background-color: #ffefd5;
 }
 
-.heading {
+.headingz {
   font-size: 3rem;
   font-weight: bold;
-  color: var(--orange);
+  color: var(--dark-red);
   margin-bottom: 2rem;
   text-align: center;
-  background: linear-gradient(145deg, #ff8a00, #e52e71);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
-.cards {
+.cardsz {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
@@ -49,33 +48,30 @@
   z-index: -1;
 }
 
-.s-blur2 {
+.s-blur2z {
   top: 12rem;
   left: -8rem;
 }
 
-.card {
+.cardz {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem;
-  border: 4px solid;
+  border: 1px solid var(--orange);
   border-radius: 15px;
-  transition: all 0.6s ease;
-  background-color: var(--card-color-light);
-  color: var(--text-color-light);
-  border-color: var(--border-color-light);
+  background-color: var(--white);
+  color: var(--dark-red);
   cursor: pointer;
   width: 100%;
   max-width: 250px;
   height: 300px;
   overflow: hidden;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
+  box-shadow: var(--boxShadow);
 }
 
-.card-emoji {
+.card-emojez {
   width: 75px;
   height: 75px;
   border-radius: 50%;
@@ -85,7 +81,7 @@
   margin-bottom: 1rem;
 }
 
-.card-heading {
+.card-headingz {
   font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
@@ -93,92 +89,104 @@
   margin-bottom: 0.5rem;
 }
 
-.card-detail {
+.card-detailz {
   font-size: 1rem;
   text-align: center;
-  font-weight: bold;
   color: inherit;
 }
 
-.card .c-button {
+.cardz .c-buttonz {
   margin-top: 1rem;
   padding: 0.5rem 1.5rem;
-  background-color: var(--orange);
-  color: white;
+  background-color: var(--dark-red);
+  color: var(--white);
   border: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
-.card .c-button:hover {
-  background-color: darkorange;
+.cardz .c-buttonz:hover {
+  background-color: var(--orange);
 }
 
-.card:hover {
-  transform: scale(1.05) rotate(5deg);
+.cardz:hover {
+  transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.more-button {
+.more-buttonz {
   margin-top: 2rem;
   padding: 0.8rem 2rem;
-  background-color: var(--orange);
-  color: white;
+  background-color: var(--dark-red);
+  color: var(--white);
   border: none;
   border-radius: 10px;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
-.more-button:hover {
-  background-color: darkorange;
+.more-buttonz:hover {
+  background-color: var(--orange);
 }
 
 @media (max-width: 1200px) {
-  .card {
+  .cardz {
     padding: 1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .card-emoji {
+  .card-emojez {
     width: 50px;
     height: 50px;
   }
 
-  .card-heading {
+  .card-headingz {
     font-size: 1.2rem;
   }
 
-  .card-detail {
+  .card-detailz {
     font-size: 0.9rem;
   }
 
-  .card .c-button {
+  .cardz .c-buttonz {
     padding: 0.5rem 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .card-emoji {
+  .cardsz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .cardz {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card-emojez {
     width: 50px;
     height: 50px;
   }
 
-  .card-heading {
+  .card-headingz {
     font-size: 1rem;
   }
 
-  .card-detail {
+  .card-detailz {
     font-size: 0.8rem;
   }
 
-  .card .c-button {
+  .cardz .c-buttonz {
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;
   }
 
-  .card:hover {
+  .cardz:hover {
     transform: none;
     box-shadow: none;
   }
