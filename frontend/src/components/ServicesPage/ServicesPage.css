@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
 
 :root {
-  --primary-color: #ff8c00;
-  --background-color: #f5f5f5;
-  --card-background: #fff8dc;
-  --text-color: #333333;
-  --border-color: #ff4500;
+  --primary-color: #b33c20;
+  --background-color: #fff4ef;
+  --card-background: #fff4ef;
+  --text-color: #5b1a18;
+  --border-color: #b33c20;
   --hover-color: #ff6347;
-  --button-background: #ff8c00;
-  --button-hover: #ff4500;
+  --button-background: #b33c20;
+  --button-hover: #ff6347;
   --card-hover-shadow: rgba(0, 0, 0, 0.2);
 }
 
@@ -16,16 +16,21 @@
   box-sizing: border-box;
 }
 
-
-.services-page {
+.services-container-wrapper {
   padding: 2rem;
+  background-color: var(--background-color);
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-hover-shadow);
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.services-page h1 {
-  margin-bottom: 2rem;
-  color: var(--border-color);
+.services-container-wrapper h1 {
+  color: var(--text-color);
   font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .services-container {
@@ -40,13 +45,13 @@
   position: relative;
   padding: 1rem;
   border-radius: 10px;
-  background-image: url(../../img/mainbackground.png);
-  background-size: cover;
+  background-color: white;
   color: var(--text-color);
   width: 315px;
-  height: 250px;
+  height: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border: 2px solid var(--border-color);
 }
 
 .service-card:hover {
@@ -58,8 +63,6 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.837); /* Add a white overlay to make text readable */
-  border-radius: 10px;
 }
 
 .service-info {
@@ -120,8 +123,8 @@
 }
 
 @media (max-width: 1024px) {
-  .services-page h1 {
-    font-size: 3rem;
+  .services-container-wrapper h1 {
+    font-size: 2rem;
   }
 
   .service-details h2 {
@@ -139,9 +142,14 @@
 }
 
 @media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .service-card {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 350px;
   }
 
   .service-image {
@@ -168,5 +176,25 @@
     align-self: center;
     padding: 0.8rem 1.4rem;
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    width: 100%;
+    height: 350px;
+  }
+
+  .service-details h2 {
+    font-size: 2rem;
+  }
+
+  .service-details p {
+    font-size: 1.8rem;
+  }
+
+  .quick-contact {
+    padding: 1rem 1rem;
+    font-size: 1rem;
   }
 }

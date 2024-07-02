@@ -1,8 +1,5 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Portfolio.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import 'swiper/swiper-bundle.css';
 
 const Portfolio = () => {
   const videos = [
@@ -13,6 +10,26 @@ const Portfolio = () => {
     "https://www.youtube.com/embed/E3PypfnX5Ks?si=2zPHaFv2aIdnHVI0",
     "https://www.youtube.com/embed/PkPXLmnKyKI?si=H0ipM7O1TBqe4QIa"
   ];
+
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const videoRefs = useRef([]);
+  const intervalId = useRef(null);
+
+  useEffect(() => {
+    const startInterval = () => {
+      intervalId.current = setInterval(() => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % videos.length);
+      }, 5000);
+    };
+
+    startInterval();
+
+    return () => clearInterval(intervalId.current);
+  }, [videos.length]);
+
+  const handleVideoClick = (index) => {
+    window.open(videos[index].replace("embed/", "watch?v="), "_blank");
+  };
 
   return (
     <div className="portfolio-wrapper">
@@ -30,51 +47,27 @@ const Portfolio = () => {
             ></iframe>
           </div>
           <div className="intro-right-container">
-            <h1 className="title">Astrology: Your Guide To Life's Journey & Path To Success!</h1>
+            <h1 className="title">Explore your life path and potential for success through the ancient wisdom of Astrology, Jyotish, and Numerology.!</h1>
             <p className="description">
-              We believe astrology is pure science, and we aim to create such a social impact of the organization on you that science and astrology through its resources of the astrology chart, kundali, etc.
-              As we dive into our 50th year, we strive to build a community where we are a part of your daily routine right from our astrology by date of birth, name, time, palm reading, and face reading, to all other online astrology, numerology, palmistry services.
+              For 20 years, we've empowered individuals through Astrology, Jyotish, and Numerology. Explore your potential with our daily guidance, from birth charts to numerology readings. Join our growing community!
             </p>
-            <h2 className="subtitle">50+ Years Of Legacy With Horoscope, Kundali, And Predictions</h2>
+            <h2 className="subtitle">20+ Years Of Legacy With Astrology, Jyotish, Numerology And Predictions</h2>
           </div>
         </div>
 
         <h2 className="slider-title">Featured Videos</h2>
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={1}
-          breakpoints={{
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 30,
-            },
-          }}
-          grabCursor={true}
-          className="portfolio-slider"
-        >
-          {videos.map((video, index) => (
-            <SwiperSlide key={index}>
-              <div className="video-item">
-                <iframe 
-                  src={video}
-                  title={`YouTube video player ${index + 1}`}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-                <div className="click-here-label">Click Here To Watch Video</div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div className="single-video-display">
+          <div className="video-item" onClick={() => handleVideoClick(currentVideoIndex)}>
+            <iframe 
+              ref={(el) => (videoRefs.current[currentVideoIndex] = el)}
+              src={videos[currentVideoIndex]}
+              title={`YouTube video player ${currentVideoIndex + 1}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -61,7 +61,7 @@ const ServicesPage = () => {
   };
 
   return (
-    <div className="services-page">
+    <div className="services-container-wrapper">
       <h1>Our Services</h1>
       <div className="services-container">
         {services.map((service, index) => (
@@ -73,11 +73,11 @@ const ServicesPage = () => {
                   <p>Price: {service.price} रु</p>
                 </div>
                 <button className="quick-contact" onClick={handleQuickContact}>
-                  Quick Contact
+                  Contact Now
                 </button>
               </div>
               <div className="service-image">
-                <img src={service.image} alt={`Service ${index + 1}`} />
+                <img src={service.image} alt={service.name} />
               </div>
             </div>
           </div>

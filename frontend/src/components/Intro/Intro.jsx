@@ -2,7 +2,7 @@ import React from "react";
 import "./Intro.css";
 import Astrology from "../../img/Astrology.png";
 import { motion } from "framer-motion";
-import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF, UilStar, UilHeart, UilBalanceScale } from "@iconscout/react-unicons";
+import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF, UilStar, UilBalanceScale } from "@iconscout/react-unicons";
 
 const Intro = () => {
   const transition = { duration: 3, type: "spring" };
@@ -15,7 +15,6 @@ const Intro = () => {
           <span>Hello, I am Jaideep Sharma, your cosmic guide and dedicated astrologer</span>
           <div className="i-details">
             <span><UilStar size="20" color="#4e4e4e" /> Jyotish uses nakshatras and rashis to understand your life path</span>
-            <span><UilHeart size="20" color="#4e4e4e" /> Nakshatras and rashis in Jyotish influence your personality and relationships</span>
             <span><UilBalanceScale size="20" color="#4e4e4e" /> Jyotish performs shantis to balance your doshas and overcome planetary afflictions</span>
           </div>
         </div>

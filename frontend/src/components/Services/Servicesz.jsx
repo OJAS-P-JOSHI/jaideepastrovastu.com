@@ -1,10 +1,6 @@
 import React from "react";
 import "./Servicesz.css";
-import swastik1 from "../../img/swastik1.png";
-import kundali from "../../img/kundali.png";
-import vidiocall from "../../img/vidiocall.png";
-import kalash from "../../img/kalash.png";
-import defaultImage from "../../img/Astrology.png"; // Import the default background image
+import defaultImage from "../../img/kundali.png"; // Import the default background image
 import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 
@@ -14,18 +10,24 @@ const transition = {
 };
 
 const cardDetails = [
-  { emoji: kundali, heading: "Personalized Kundali", detail: "10+ years Career, Business, Money, Health, Love, Marriage Prediction Report." },
-  { emoji: swastik1, heading: "Mega Astrology Webinar", detail: "1 Day Live Astrology Webinar on Zoom." },
-  { emoji: vidiocall, heading: "Baby Name Report", detail: "Get personalized name suggestions as per numerological explanation.", color: "rgba(252, 166, 31, 0.45)" },
-  { emoji: kalash, heading: "Live Courses", detail: "Enroll in our Live Online comprehensive Astrology, Numerology & Vastu Shastra courses." },
-  // New Cards
-  { emoji: defaultImage, heading: "Couple Matching Kundli", detail: "Couple Kundli matching/ Milan Report based on male & female partner’s birth date & time." },
-  { emoji: defaultImage, heading: "Fortune Report", detail: "Numerology help you align with nature, & attract more success, money, & positivity into your life." },
-  { emoji: defaultImage, heading: "Buy Gemstones", detail: "Explore our diverse collection of astrological guidance gemstones." },
+  { emoji: defaultImage, heading: "Kaal Sarp Shanti Puja", detail: "Perform rituals to mitigate the effects of Kaal Sarp Dosh and bring peace." },
+  { emoji: defaultImage, heading: "Chandal Yog Shanti", detail: "Rituals to calm the malefic effects of Chandal Yog and bring prosperity." },
+  { emoji: defaultImage, heading: "Angarak Yog Shanti", detail: "Perform Angarak Yog Shanti to reduce obstacles and enhance positivity." },
+  { emoji: defaultImage, heading: "Grahan Yog Shanti", detail: "Special pujas to nullify the effects of Grahan Yog for betterment." },
+  { emoji: defaultImage, heading: "Nakshatra Dosh Shanti", detail: "Puja to balance Nakshatra Dosh and bring harmony to life." },
+  { emoji: defaultImage, heading: "Yog Dosh Shanti", detail: "Rituals to alleviate the negative impacts of various Yog Dosh." },
+  { emoji: defaultImage, heading: "Karan Dosh Shanti", detail: "Special pujas to rectify Karan Dosh and enhance life quality." },
+  { emoji: defaultImage, heading: "Mangal Shanti Puja", detail: "Rituals to mitigate the adverse effects of Mangal Dosh." },
+  { emoji: defaultImage, heading: "Janm Patrika Nirmaan", detail: "Create your personalized birth chart based on your birth details." },
+  { emoji: defaultImage, heading: "Vastu Anuroop Bhavan Naksha Nirmaan", detail: "Design building plans as per Vastu principles to ensure harmony and prosperity." },
 ];
 
 const Servicesz = () => {
   const navigate = useNavigate();
+
+  const handleOrderNow = () => {
+    navigate('/contact-now');
+  };
 
   const handleMoreServices = () => {
     navigate('/services');
@@ -46,7 +48,7 @@ const Servicesz = () => {
               <div className="card-emojez" style={{ backgroundImage: `url(${card.emoji || defaultImage})` }}></div>
               <span className="card-headingz">{card.heading}</span>
               <span className="card-detailz">{card.detail}</span>
-              <button className="c-buttonz">Order Now</button>
+              <button className="c-buttonz" onClick={handleOrderNow}>Order Now</button>
             </div>
           </motion.div>
         ))}

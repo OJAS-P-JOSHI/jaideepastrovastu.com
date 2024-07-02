@@ -3,13 +3,11 @@ import "./Experience.css";
 
 const Experience = () => {
   const achievements = [
-    { value: "8+", label1: "years", label2: "Experience" },
-    { value: "20+", label1: "completed", label2: "Projects" },
-    { value: "5+", label1: "companies", label2: "Work" },
-    { value: "10+", label1: "skills", label2: "Mastered" },
-    { value: "15+", label1: "clients", label2: "Satisfied" },
-    { value: "7+", label1: "awards", label2: "Won" },
-    { value: "100+", label1: "hours", label2: "Training" },
+    { value: "20+", label1: "years", label2: "Experience" },
+    { value: "100+", label1: "Happy", label2: "Clients" },  // Rounded value
+    { value: "15+", label1: "Vastu Sites", label2: "Visited" },
+    { value: "3+", label1: "Languages", label2: "Known" },
+    { value: "100+", label1: "hours", label2: "Training" }, // Kept "hours"
   ];
 
   return (

@@ -35,13 +35,13 @@
 .label1 {
   font-size: 18px;
   margin: 5px 0;
-  color: #FFA500; /* Orange */
+  color: #b20000; /* Orange */
 }
 
 .label2 {
   font-size: 18px;
   margin: 5px 0;
-  color: #FFD700; /* Yellow */
+  color: #a90000; /* Yellow */
 }
 
 /* Media Queries */

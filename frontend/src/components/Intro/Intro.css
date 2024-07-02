@@ -24,24 +24,26 @@
   position: relative; 
   flex: 1;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   z-index: 2;
 }
 
 .i-name {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .i-name > :nth-child(1) {
   color: #4e4e4e;
-  font-size: 3.5rem;
+  font-weight: bold;
+  font-size: 4rem;
 }
 
 .i-name > :nth-child(2) {
   color: var(--orange);
-  font-size: 2.5rem;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
 .i-details {
@@ -184,6 +186,7 @@
   .i-left {
     order: 2;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .i-right {
@@ -199,11 +202,12 @@
   }
 
   .i-name > :nth-child(1) {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .i-name > :nth-child(2) {
     font-size: 2rem;
+    
   }
 
   .i-details > span {

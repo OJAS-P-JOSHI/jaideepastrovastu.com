@@ -13,6 +13,9 @@ import ServicesPage from './components/ServicesPage/ServicesPage';
 import ContactNow from './components/ContactNow/ContactNow';
 import Admin from './components/Admin/Admin'; // Import the Admin component
 import './App.css';
+import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // Import the new component
+
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
           <Route path="/" element={<>
             <Intro />
             <Services />
+            <SiteVastuVisits />
             <Experience />
             <Portfolio />
           </>} />

@@ -1,22 +1,33 @@
-/* src/components/PoojaGallery/PoojaGallery.css */
 .pooja-gallery {
   padding: 20px;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #fff7dd;
 }
 
 .pooja-gallery h1 {
   margin-bottom: 20px;
   font-size: 2.5em;
-  color: #333;
+  color: #8B0000; /* Dark red color for headings */
+}
+
+.quality-gemstones h1,
+.articles h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #8B0000; /* Dark red color for headings */
 }
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; /* Adjusted for spacing between items */
+  gap: 20px;
   justify-items: center;
   align-items: center;
+}
+
+.gallery.articles-gallery .gallery-item {
+  width: 200px; /* Adjusted width for articles */
+  height: 700px; /* Adjusted height for articles */
 }
 
 .gallery-item {
@@ -43,13 +54,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid transparent; /* Initial border color */
+  border: 3px solid transparent;
   border-radius: 10px;
   transition: border-color 0.3s ease-in-out;
 }
 
 .gallery-item:hover::before {
-  border-color: #ff7f50; /* Highlighted border color on hover */
+  border-color: #ff7f50;
 }
 
 .gallery-item:hover {
@@ -81,6 +92,36 @@
   color: white;
 }
 
-.articles-swiper {
-  margin: 20px 0;
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .gallery.articles-gallery .gallery-item {
+    width: 150px; /* Adjusted width for articles */
+    height: 525px; /* Adjusted height for articles */
+  }
+
+  .pooja-gallery h1,
+  .quality-gemstones h1,
+  .articles h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .gallery.articles-gallery .gallery-item {
+    width: 100px; /* Adjusted width for articles */
+    height: 350px; /* Adjusted height for articles */
+  }
+
+  .pooja-gallery h1,
+  .quality-gemstones h1,
+  .articles h1 {
+    font-size: 1.5em;
+  }
 }

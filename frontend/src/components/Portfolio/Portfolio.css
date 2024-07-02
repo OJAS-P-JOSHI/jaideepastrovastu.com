@@ -53,7 +53,7 @@
 }
 
 .intro-right-container .description {
-  color: var(--dark-red);
+  color:#000000;
   font-size: 1.4rem;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -67,15 +67,12 @@
 .slider-title {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: var(--purple);
+  color:#000000;
 }
 
-.portfolio-slider {
-  width: 100%;
-}
-
-.portfolio-slider .swiper-slide {
-  width: auto;
+.single-video-display {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .video-item {
@@ -85,6 +82,7 @@
   overflow: hidden;
   box-shadow: none;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
   margin-bottom: 0; /* Ensure no additional margin */
 }
 
@@ -97,24 +95,6 @@
   pointer-events: none;
   border: none;
   transform: scale(1.2); /* Scale the iframe for larger appearance */
-}
-
-.video-item .click-here-label {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--purple);
-  color: #fff;
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.video-item:hover .click-here-label {
-  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -139,27 +119,12 @@
   .intro-right-container .subtitle {
     font-size: 1.5rem;
   }
+  .single-video-display {
+    width: 100%;
+    margin: 0 auto;
+  }
 
   .slider-title {
     font-size: 1.5rem;
   }
-
-  .portfolio-slider .swiper-slide {
-    width: 100%;
-  }
-}
-
-.swiper-container {
-  position: relative;
-}
-
-.swiper-container::after {
-  content: "Swipe to navigate";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgba(106, 13, 173, 0.6);
-  font-size: 14px;
-  pointer-events: none;
 }
