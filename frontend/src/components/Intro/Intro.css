@@ -36,13 +36,11 @@
 
 .i-name > :nth-child(1) {
   color: #4e4e4e;
-  font-weight: bold;
   font-size: 4rem;
 }
 
 .i-name > :nth-child(2) {
   color: var(--orange);
-  font-weight: bold;
   font-size: 3rem;
 }
 
@@ -130,22 +128,6 @@
   transform: scale(1);
 }
 
-@keyframes glassesRotation {
-  0% {
-    transform: scale(0.5) rotateY(0deg);
-  }
-  100% {
-    transform: scale(0.5) rotateY(360deg);
-  }
-}
-
-.i-right > :nth-child(2) {
-  animation: glassesRotation 10s infinite linear;
-  transform: scale(0.15);
-  top: -45%;
-  right: -10%;
-  border-radius: 50%;
-}
 
 @media screen and (max-width: 768px) {
   .Intro {

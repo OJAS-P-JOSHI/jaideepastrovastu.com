@@ -8,7 +8,7 @@ const Login = ({ setAuth }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     // Add your authentication logic here
-    if (username === 'jaideepsharma' && password === '07072024') {
+    if (username === 'jaideepsharma' && password === '02101987') {
       setAuth(true);
     } else {
       alert('Invalid credentials');

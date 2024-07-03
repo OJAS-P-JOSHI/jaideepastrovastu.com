@@ -65,7 +65,7 @@ const ContactNow = () => {
                     </a>
                     <span>Email</span>
                 </div>
-                <div className="icon-container">
+                <div className="icon-container">    
                     <a href="tel:+919826190941">
                         <img src={PhoneIcon} alt="Phone" className="icon" />
                     </a>

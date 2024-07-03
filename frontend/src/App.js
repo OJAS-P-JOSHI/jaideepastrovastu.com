@@ -14,6 +14,7 @@ import ContactNow from './components/ContactNow/ContactNow';
 import Admin from './components/Admin/Admin'; // Import the Admin component
 import './App.css';
 import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // Import the new component
+import News from './components/News/News';
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <SiteVastuVisits />
             <Experience />
             <Portfolio />
+            <News />
           </>} />
           <Route path="/blogs" element={<Blog />} />
           <Route path="/pooja-gallery" element={<PoojaGallery />} />

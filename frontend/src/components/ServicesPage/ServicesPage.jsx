@@ -25,21 +25,26 @@ import image21 from '../../img1/21.jpg';
 import image22 from '../../img1/22.jpg';
 import image23 from '../../img1/23.jpg';
 import image24 from '../../img1/24.jpg';
-import image25 from '../../img1/49.jpg'; // Importing the new image
-import image26 from '../../img1/26.jpg'; // Importing the new image
+import image25 from '../../img1/25.jpg';
+import image26 from '../../img1/26.jpg';
+import image27 from '../../img1/27.jpg'; // Importing new images
+import image28 from '../../img1/28.jpg';
+import image29 from '../../img1/29.jpg';
+import image30 from '../../img1/30.jpg';
+import image31 from '../../img1/31.jpg';
 
 const services = [
-  { name: "कालसर्प शांति पूजन", price: "11000", image: image1 },
-  { name: "चांडाल योग शांति", price: "11000", image: image2 },
-  { name: "अंगारक योग शांति", price: "11000", image: image3 },
-  { name: "ग्रहण योग शान्ति", price: "11000", image: image4 },
-  { name: "नक्षत्र दोष शांति", price: "11000", image: image5 },
-  { name: "योग दोष शांति", price: "11000", image: image6 },
-  { name: "करण दोष शांति", price: "11000", image: image7 },
-  { name: "मंगल शांति पूजन", price: "11000", image: image8 },
-  { name: "नवग्रह शांति पूजन", price: "11000", image: image9 },
-  { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "21000", image: image10 },
-  { name: "कुंम्भ विवाह और अर्क विवाह  पूर्ण विधान", price: "11000", image: image11 },
+  { name: "कालसर्प शांति पूजन", price: "21000", image: image1 },
+  { name: "चांडाल योग शांति", price: "21000", image: image2 },
+  { name: "अंगारक योग शांति", price: "21000", image: image3 },
+  { name: "ग्रहण योग शान्ति", price: "21000", image: image4 },
+  { name: "नक्षत्र दोष शांति", price: "21000", image: image5 },
+  { name: "योग दोष शांति", price: "21000", image: image6 },
+  { name: "करण दोष शांति", price: "21000", image: image7 },
+  { name: "मंगल शांति पूजन", price: "21000", image: image8 },
+  { name: "नवग्रह शांति पूजन", price: "21000", image: image9 },
+  { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "35000", image: image10 },
+  { name: "कुंम्भ विवाह और अर्क विवाह  पूर्ण विधान", price: "21000", image: image11 },
   { name: "एक दिवसीय वास्तु पूजन", price: "31000", image: image12 },
   { name: "तीन दिवसीय वास्तु पूजन", price: "51000", image: image13 },
   { name: "नवचंडी महायज्ञ", price: "51000", image: image14 },
@@ -51,10 +56,15 @@ const services = [
   { name: "गुण एवं कुंडली मिलान", price: "1100", image: image20 },
   { name: "जन्म पत्रिका निर्माण", price: "2100", image: image21 },
   { name: "भवन वास्तु निरीक्षण", price: "2100", image: image22 },
-  { name: "भूमिगतजल परीक्षण", price: "5100", image: image23 },
-  { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "11000", image: image24 },
-  { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image25 }, // New service
-  { name: "शतचंडी महायज्ञ", price: "150000", image: image26 }, // New service
+  { name: "भूमिगतजल परीक्षण", price: "11000", image: image23 },
+  { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "21000", image: image24 },
+  { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image25 },
+  { name: "शतचंडी महायज्ञ", price: "150000", image: image26 },
+  { name: "लघुरुद्र अनुष्ठान", price: "51000", image: image27 }, // New service
+  { name: "अतिरुद्र अनुष्ठान", price: "125000", image: image28 }, // New service
+  { name: "महारुद्र अनुष्ठान", price: "225000", image: image29 }, // New service
+  { name: "प्राणप्रतिष्ठा महायज्ञ", price: "125000", image: image30 }, // New service
+  { name: "मूर्तिप्राण प्रतिष्ठा महायज्ञ", price: "250000", image: image31 }, // New service
 ];
 
 const ServicesPage = () => {

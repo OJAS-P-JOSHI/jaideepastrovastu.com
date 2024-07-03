@@ -12,7 +12,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           <span>Jai Mahakal</span>
-          <span>Hello, I am Jaideep Sharma, your cosmic guide and dedicated astrologer</span>
+          <span>Jaideep Sharma here, your astrologer & cosmic guide. Explore Jyotish, astronomy & numerology at JaideepAstroVastu.com.</span>
           <div className="i-details">
             <span><UilStar size="20" color="#4e4e4e" /> Jyotish uses nakshatras and rashis to understand your life path</span>
             <span><UilBalanceScale size="20" color="#4e4e4e" /> Jyotish performs shantis to balance your doshas and overcome planetary afflictions</span>
@@ -49,7 +49,7 @@ const Intro = () => {
 
       <div className="i-right">
         <motion.img
-          whileInView={{ left: "15%" }}
+          whileInView={{ left: "20%" }}
           transition={transition}
           src={Astrology}
           alt="Astrology"/>
