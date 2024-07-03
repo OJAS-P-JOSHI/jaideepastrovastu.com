@@ -36,13 +36,21 @@
 }
 
 .icon {
-    color: orange;
+    width: 50px;
+    height: 50px;
 }
 
 .icon-container span {
     margin-top: 0.5rem;
     font-size: 1rem;
     color: orange;
+}
+
+/* Increase size for YouTube and Email icons */
+.icon-youtube,
+.icon-email {
+    width: 60px;
+    height: 60px;
 }
 
 .contact-form {
@@ -114,7 +122,7 @@
     }
 
     .contact-now h1 {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .contact-now p {
@@ -122,7 +130,10 @@
     }
 
     .contact-icons {
-        gap: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        justify-items: center;
     }
 
     .icon-container {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './ContactNow.css';
-import UilWhatsapp from '@iconscout/react-unicons/icons/uil-whatsapp';
-import UilYoutube from '@iconscout/react-unicons/icons/uil-youtube';
-import UilEnvelope from '@iconscout/react-unicons/icons/uil-envelope';
-import UilPhone from '@iconscout/react-unicons/icons/uil-phone';
+import EmailIcon from '../../img/Email.svg';
+import PhoneIcon from '../../img/Phone.svg';
+import WhatsappIcon from '../../img/Whatsapp.svg';
+import YoutubeIcon from '../../img/Youtube.svg';
 
 const ContactNow = () => {
     const [formData, setFormData] = useState({
@@ -49,25 +49,25 @@ const ContactNow = () => {
             <div className="contact-icons">
                 <div className="icon-container">
                     <a href="https://wa.me/919826190941" target="_blank" rel="noopener noreferrer">
-                        <UilWhatsapp size="50" className="icon" />
+                        <img src={WhatsappIcon} alt="WhatsApp" className="icon" />
                     </a>
                     <span>WhatsApp</span>
                 </div>
                 <div className="icon-container">
                     <a href="https://www.youtube.com/@jyotishacharyjaideepsharma1621" target="_blank" rel="noopener noreferrer">
-                        <UilYoutube size="50" className="icon" />
+                        <img src={YoutubeIcon} alt="YouTube" className="icon" />
                     </a>
                     <span>YouTube</span>
                 </div>
                 <div className="icon-container">
-                    <a href="mailto:astrojaideepsharma@gmail.com">
-                        <UilEnvelope size="50" className="icon" />
+                    <a href="mailto:Sharmajaideep603@gmail.com">
+                        <img src={EmailIcon} alt="Email" className="icon" />
                     </a>
                     <span>Email</span>
                 </div>
                 <div className="icon-container">
                     <a href="tel:+919826190941">
-                        <UilPhone size="50" className="icon" />
+                        <img src={PhoneIcon} alt="Phone" className="icon" />
                     </a>
                     <span>Phone</span>
                 </div>

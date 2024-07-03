@@ -13,15 +13,20 @@ const Footer = () => {
         <div className="f-sections">
           <div className="f-section">
             <h3>Office</h3>
-            <p>Pushpanjali Nagar, Ujjain</p>
-            <p>Home Address - Gokul Dham Nagar, Near Aditya Nagar A.B. Road, Shajapur (M.P.)</p>
+            <p>205, 206, Indraprasth Tower, MG Road, Indore, MP</p>
+            <p>6, Zone One, MP Nagar, Bhopal, (MP)</p>
+            <p>B-907, 9th Floor, Buland Heights, Crossing Republic, Ghaziabad (UP)</p>
+            <h3>Home Address</h3>
+            <p>Gokul Dham Nagar, Near Aditya Nagar, AB Road, Shajapur (MP)</p>
+            <h3>Phone Number</h3>
             <p>+91 98261 90941</p>
+            <p>+91 9826200041</p>
           </div>
           <div className="f-section">
             <h3>Links</h3>
             <ul>
               <li><a href="/">Home</a></li>
-              <li><a href="/service">Services</a></li>
+              <li><a href="/services">Services</a></li>
               <li><a href="/blogs">Blogs</a></li>
               <li><a href="/pooja-gallery">Pooja Gallery</a></li>
               <li><a href="/contact-now">Contact</a></li>

@@ -25,6 +25,8 @@ import image21 from '../../img1/21.jpg';
 import image22 from '../../img1/22.jpg';
 import image23 from '../../img1/23.jpg';
 import image24 from '../../img1/24.jpg';
+import image25 from '../../img1/49.jpg'; // Importing the new image
+import image26 from '../../img1/26.jpg'; // Importing the new image
 
 const services = [
   { name: "कालसर्प शांति पूजन", price: "11000", image: image1 },
@@ -38,11 +40,11 @@ const services = [
   { name: "नवग्रह शांति पूजन", price: "11000", image: image9 },
   { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "21000", image: image10 },
   { name: "कुंम्भ विवाह और अर्क विवाह  पूर्ण विधान", price: "11000", image: image11 },
-  { name: "एक दिवसीय वास्तु पूजन", price: "21000", image: image12 },
-  { name: "तीन दिवसीय वास्तु पूजन", price: "31000", image: image13 },
-  { name: "नवचंडी महायज्ञ", price: "31000", image: image14 },
-  { name: "महामृत्युंजय अनुष्ठान", price: "31000", image: image15 },
-  { name: "बगुलामखी अनुष्ठान", price: "3100", image: image16 },
+  { name: "एक दिवसीय वास्तु पूजन", price: "31000", image: image12 },
+  { name: "तीन दिवसीय वास्तु पूजन", price: "51000", image: image13 },
+  { name: "नवचंडी महायज्ञ", price: "51000", image: image14 },
+  { name: "महामृत्युंजय अनुष्ठान", price: "55000", image: image15 },
+  { name: "बगुलामखी अनुष्ठान", price: "55000", image: image16 },
   { name: "ज्योतिष परामर्श", price: "501", image: image17 },
   { name: "सभी प्रकार के मुहूर्त", price: "501", image: image18 },
   { name: "जन्मपत्रिका विवेचना", price: "1100", image: image19 },
@@ -51,6 +53,8 @@ const services = [
   { name: "भवन वास्तु निरीक्षण", price: "2100", image: image22 },
   { name: "भूमिगतजल परीक्षण", price: "5100", image: image23 },
   { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "11000", image: image24 },
+  { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image25 }, // New service
+  { name: "शतचंडी महायज्ञ", price: "150000", image: image26 }, // New service
 ];
 
 const ServicesPage = () => {
