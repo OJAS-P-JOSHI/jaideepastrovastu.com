@@ -51,7 +51,7 @@ const Portfolio = () => {
             <p className="description">
               For 20 years, we've empowered individuals through Astrology, Jyotish, and Numerology. Explore your potential with our daily guidance, from birth charts to numerology readings. Join our growing community!
             </p>
-            <h2 className="subtitle">20+ Years Of Legacy With Astrology, Jyotish, Numerology And Predictions</h2>
+            <h2 className="subtitle">20+ Years Of Legacy With Astrology, Jyotish, Numerology And Vastu Guidence</h2>
           </div>
         </div>
 

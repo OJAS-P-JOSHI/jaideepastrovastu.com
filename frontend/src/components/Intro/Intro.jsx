@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
 import "./Intro.css";
 import Astrology from "../../img/Astrology.png";
 import { motion } from "framer-motion";
@@ -6,16 +7,52 @@ import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF, UilStar,
 
 const Intro = () => {
   const transition = { duration: 3, type: "spring" };
+  const names = [
+    "|| Jai Mahakal ||",
+    "|| Jai Shree Ram ||",
+    "|| Jai Jagannath ||",
+    "|| Jai Sri Vishweshwara ||",
+    "|| Jay Somnath ||",
+    "|| Jay Mallikarjuna ||",
+    "|| Jay Mahakaleshwar ||",
+    "|| Jay Omkareshwar ||",
+    "|| Jay Baidyanath ||",
+    "|| Jay Bhimashankar ||",
+    "|| Jay Ramanathaswamy ||",
+    "|| Jay Nageshwar ||",
+    "|| Jay Kashi Vishwanath ||",
+    "|| Jay Trimbakeshwar ||",
+    "|| Jay Kedarnath ||",
+    "|| Jay Grishneshwar ||",
+    "|| Jai Parshuram ||"
+  ];
+  const [currentText, setCurrentText] = useState(names[0]);
+  const [fadeProp, setFadeProp] = useState('fade-in');
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setFadeProp('fade-out');
+      setTimeout(() => {
+        index = (index + 1) % names.length;
+        setCurrentText(names[index]);
+        setFadeProp('fade-in');
+      }, 1000); // The fade-out duration
+
+    }, 3000); // Change name every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="Intro" id="Intro">
       <div className="i-left">
         <div className="i-name">
-          <span>Jai Mahakal</span>
-          <span>Jaideep Sharma here, your astrologer & cosmic guide. Explore Jyotish, astronomy & numerology at JaideepAstroVastu.com.</span>
+          <span className={fadeProp}>{currentText}</span>
+          <span>Jaideep Sharma here, explore Jyotish, Astronomy & Numerology at JaideepAstroVastu.com.</span>
           <div className="i-details">
-            <span><UilStar size="20" color="#4e4e4e" /> Jyotish uses nakshatras and rashis to understand your life path</span>
-            <span><UilBalanceScale size="20" color="#4e4e4e" /> Jyotish performs shantis to balance your doshas and overcome planetary afflictions</span>
+            <span><UilStar size="20" color="#FFD700" /> I combine traditional Jyotish practices with modern insights to provide practical guidance.</span>
+            <span><UilBalanceScale size="20" color="#FFD700" />I help clients achieve harmony and well-being through personalized Vastu recommendations.</span>
           </div>
         </div>
         <a href="/contact-now">

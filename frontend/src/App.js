@@ -15,6 +15,7 @@ import Admin from './components/Admin/Admin'; // Import the Admin component
 import './App.css';
 import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // Import the new component
 import News from './components/News/News';
+import About from './components/About/About';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<>
             <Intro />
+            <About />
             <Services />
             <SiteVastuVisits />
             <Experience />
