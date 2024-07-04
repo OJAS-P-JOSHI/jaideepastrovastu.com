@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { UilYoutube, UilWhatsapp, UilPhone, UilInstagram, UilFacebookF, UilStar, UilBalanceScale } from "@iconscout/react-unicons";
 
 const Intro = () => {
-  const transition = { duration: 3, type: "spring" };
+  const transition = { duration: 1, type: "spring" };
   const names = [
     "|| Jai Mahakal ||",
     "|| Jai Shree Ram ||",

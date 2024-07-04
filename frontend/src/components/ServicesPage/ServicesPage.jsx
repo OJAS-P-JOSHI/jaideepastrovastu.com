@@ -55,7 +55,7 @@ const services = [
   { name: "जन्मपत्रिका विवेचना", price: "1100", image: image19 },
   { name: "गुण एवं कुंडली मिलान", price: "1100", image: image20 },
   { name: "जन्म पत्रिका निर्माण", price: "2100", image: image21 },
-  { name: "भवन वास्तु निरीक्षण", price: "2100", image: image22 },
+  { name: "भवन वास्तु निरीक्षण", price: "5100", image: image22 },
   { name: "भूमिगतजल परीक्षण", price: "11000", image: image23 },
   { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "21000", image: image24 },
   { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image25 },

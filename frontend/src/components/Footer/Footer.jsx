@@ -17,6 +17,7 @@ const Footer = () => {
             <p>6, Zone One, MP Nagar, Bhopal, (MP)</p>
             <p>B-907, 9th Floor, Buland Heights, Crossing Republic, Ghaziabad (UP)</p>
             <h3>Home Address</h3>
+            <p>Mangalnath Road, Ujjain</p>
             <p>Gokul Dham Nagar, Near Aditya Nagar, AB Road, Shajapur (MP)</p>
             <h3>Phone Number</h3>
             <p>+91 98261 90941</p>

@@ -16,6 +16,7 @@ const cardDetails = [
   { emoji: defaultImage, heading: "Dosh Shanti Pujan", detail: "Perform pujas to nullify various doshas and bring positivity." },
   { emoji: defaultImage, heading: "Gems Stone", detail: "Choose the right gemstones to enhance your life and mitigate doshas." },
   { emoji: defaultImage, heading: "Vaastu Remedies", detail: "Get remedies to rectify Vastu doshas and improve your living space." },
+  { emoji: defaultImage, heading: "Underground Water Testing", detail: "Test and locate underground water sources for effective utilization." },
   { emoji: defaultImage, heading: "Vaastu Visit", detail: "Schedule a visit for personalized Vastu consultation and remedies." },
   { emoji: defaultImage, heading: "Vaastu Anuroop Bhavan Naksha Nirmaan", detail: "Design building plans as per Vastu principles to ensure harmony and prosperity." },
   { emoji: defaultImage, heading: "Janm Patrika Nirmaan", detail: "Create your personalized birth chart based on your birth details." },
