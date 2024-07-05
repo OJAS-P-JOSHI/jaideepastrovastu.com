@@ -32,6 +32,8 @@ import image28 from '../../img1/28.jpg';
 import image29 from '../../img1/29.jpg';
 import image30 from '../../img1/30.jpg';
 import image31 from '../../img1/31.jpg';
+import image32 from '../../img1/32.jpg'; // New image
+import image33 from '../../img1/33.jpg'; // New image
 
 const services = [
   { name: "कालसर्प शांति पूजन", price: "21000", image: image1 },
@@ -50,21 +52,23 @@ const services = [
   { name: "नवचंडी महायज्ञ", price: "51000", image: image14 },
   { name: "महामृत्युंजय अनुष्ठान", price: "55000", image: image15 },
   { name: "बगुलामखी अनुष्ठान", price: "55000", image: image16 },
-  { name: "ज्योतिष परामर्श", price: "501", image: image17 },
-  { name: "सभी प्रकार के मुहूर्त", price: "501", image: image18 },
+  { name: "ज्योतिष परामर्श", price: "1100", image: image17 },
+  { name: "सभी प्रकार के मुहूर्त", price: "1100", image: image18 },
   { name: "जन्मपत्रिका विवेचना", price: "1100", image: image19 },
-  { name: "गुण एवं कुंडली मिलान", price: "1100", image: image20 },
-  { name: "जन्म पत्रिका निर्माण", price: "2100", image: image21 },
-  { name: "भवन वास्तु निरीक्षण", price: "5100", image: image22 },
+  { name: "गुण एवं कुंडली मिलान", price: "2100", image: image20 },
+  { name: "जन्म पत्रिका निर्माण", price: "2500", image: image21 },
+  { name: "भवन वास्तु निरीक्षण", price: "11000", image: image22 },
   { name: "भूमिगतजल परीक्षण", price: "11000", image: image23 },
   { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "21000", image: image24 },
   { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image25 },
   { name: "शतचंडी महायज्ञ", price: "150000", image: image26 },
-  { name: "लघुरुद्र अनुष्ठान", price: "51000", image: image27 }, // New service
-  { name: "अतिरुद्र अनुष्ठान", price: "125000", image: image28 }, // New service
-  { name: "महारुद्र अनुष्ठान", price: "225000", image: image29 }, // New service
-  { name: "प्राणप्रतिष्ठा महायज्ञ", price: "125000", image: image30 }, // New service
-  { name: "मूर्तिप्राण प्रतिष्ठा महायज्ञ", price: "250000", image: image31 }, // New service
+  { name: "लघुरुद्र अनुष्ठान", price: "51000", image: image27 },
+  { name: "अतिरुद्र अनुष्ठान", price: "125000", image: image28 },
+  { name: "महारुद्र अनुष्ठान", price: "225000", image: image29 },
+  { name: "प्राणप्रतिष्ठा महायज्ञ", price: "125000", image: image30 },
+  { name: "मूर्तिप्राण प्रतिष्ठा महायज्ञ", price: "250000", image: image31 },
+  { name: "पत्रिका एव राशि अनुसार रत्न धारण", price: "21000", image: image32 }, // New service
+  { name: "बिना तोड़ फोड़ के वास्तुदोष का सुधार", price: "21000", image: image33 }, // New service
 ];
 
 const ServicesPage = () => {

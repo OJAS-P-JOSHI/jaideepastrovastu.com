@@ -67,6 +67,20 @@ import image58 from '../../img1/58.jpg';
 import image59 from '../../img1/59.jpg';
 import image60 from '../../img1/60.jpg';
 import image61 from '../../img1/61.jpg';
+import image62 from '../../img1/62.jpg';
+import image63 from '../../img1/63.jpg';
+import image64 from '../../img1/64.jpg';
+import image65 from '../../img1/65.jpg';
+import image66 from '../../img1/66.jpg';
+import image67 from '../../img1/67.jpg';
+import image68 from '../../img1/68.jpg';
+import image69 from '../../img1/69.jpg';
+import image70 from '../../img1/70.jpg';
+import image71 from '../../img1/71.jpg';
+import image72 from '../../img1/72.jpg';
+import image73 from '../../img1/73.jpg';
+import image74 from '../../img1/74.jpg';
+import image75 from '../../img1/75.jpg';
 
 // Import images from publish img
 import articleImage1 from '../../publish img/1.jpg';
@@ -134,7 +148,8 @@ const PoojaGallery = () => {
     image31, image32, image33, image34, image35, image36, image37, image38, image39, image40,
     image41, image42, image43, image44, image45, image46, image47, image48, image49, image50,
     image51, image52, image53, image54, image55, image56, image57, image58, image59, image60,
-    image61
+    image61, image62, image63, image64, image65, image66, image67, image68, image69, image70,
+    image71, image72, image73, image74, image75
   ];
 
   const articleImages = [
