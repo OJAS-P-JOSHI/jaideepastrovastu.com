@@ -1,11 +1,13 @@
-.site-vastu-visits {
+.site-vastu-visits,
+.my-guruji {
   padding: 20px;
   margin: 20px 0; /* Add margin to avoid overlap with adjacent sections */
   text-align: center;
   background-color: #ffefd5;
 }
 
-.site-vastu-visits h1 {
+.site-vastu-visits h1,
+.my-guruji h1 {
   margin-bottom: 20px;
   font-size: 2.5em;
   color: #8B0000; /* Dark red color for headings */
@@ -86,7 +88,8 @@
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 
-  .site-vastu-visits h1 {
+  .site-vastu-visits h1,
+  .my-guruji h1 {
     font-size: 2em;
   }
 }
@@ -96,7 +99,8 @@
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 
-  .site-vastu-visits h1 {
+  .site-vastu-visits h1,
+  .my-guruji h1 {
     font-size: 1.5em;
   }
 }

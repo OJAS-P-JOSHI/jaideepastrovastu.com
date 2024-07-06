@@ -5,6 +5,10 @@ import { useSpring, animated } from 'react-spring';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 
+
+import guru1 from '../../guruimg/1.jpg';
+import guru2 from '../../guruimg/2.jpg';  
+import guru3 from '../../guruimg/3.jpg';
 // Import images from siteVastu
 import image1 from '../../siteVastu/1.jpg';
 import image2 from '../../siteVastu/2.jpg';
@@ -18,38 +22,53 @@ import image9 from '../../siteVastu/9.jpg';
 import image10 from '../../siteVastu/10.jpg';
 
 const SiteVastuVisits = () => {
-  const images = [
+  const siteVastuImages = [
     image1, image2, image3, image4, image5, image6, image7, image8, image9, image10,
+  ];
+
+  const myGurujiImages = [
+    guru1, guru2, guru3
   ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
 
-  const handleImageClick = (index) => {
+  const handleImageClick = (images, index) => {
     setPhotoIndex(index);
-    setIsOpen(true);
+    setIsOpen(images === myGurujiImages ? 'myGuruji' : 'siteVastu');
   };
 
   return (
-    <div className="site-vastu-visits">
-      <h1>Site Vastu Visits</h1>
-      <div className="gallery-grid">
-        {images.map((image, index) => (
-          <GalleryItem key={index} image={image} index={index} onClick={() => handleImageClick(index)} />
-        ))}
+    <div>
+      <div className="my-guruji">
+        <h1>My Guruji</h1>
+        <div className="gallery-grid">
+          {myGurujiImages.map((image, index) => (
+            <GalleryItem key={index} image={image} index={index} onClick={() => handleImageClick(myGurujiImages, index)} />
+          ))}
+        </div>
+      </div>
+
+      <div className="site-vastu-visits">
+        <h1>Site Vastu Visits</h1>
+        <div className="gallery-grid">
+          {siteVastuImages.map((image, index) => (
+            <GalleryItem key={index} image={image} index={index} onClick={() => handleImageClick(siteVastuImages, index)} />
+          ))}
+        </div>
       </div>
 
       {isOpen && (
         <Lightbox
-          mainSrc={images[photoIndex]}
-          nextSrc={images[(photoIndex + 1) % images.length]}
-          prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+          mainSrc={isOpen === 'myGuruji' ? myGurujiImages[photoIndex] : siteVastuImages[photoIndex]}
+          nextSrc={isOpen === 'myGuruji' ? myGurujiImages[(photoIndex + 1) % myGurujiImages.length] : siteVastuImages[(photoIndex + 1) % siteVastuImages.length]}
+          prevSrc={isOpen === 'myGuruji' ? myGurujiImages[(photoIndex + myGurujiImages.length - 1) % myGurujiImages.length] : siteVastuImages[(photoIndex + siteVastuImages.length - 1) % siteVastuImages.length]}
           onCloseRequest={() => setIsOpen(false)}
           onMovePrevRequest={() =>
-            setPhotoIndex((photoIndex + images.length - 1) % images.length)
+            setPhotoIndex((photoIndex + (isOpen === 'myGuruji' ? myGurujiImages.length : siteVastuImages.length) - 1) % (isOpen === 'myGuruji' ? myGurujiImages.length : siteVastuImages.length))
           }
           onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % images.length)
+            setPhotoIndex((photoIndex + 1) % (isOpen === 'myGuruji' ? myGurujiImages.length : siteVastuImages.length))
           }
         />
       )}
@@ -67,7 +86,7 @@ const GalleryItem = ({ image, index, onClick }) => {
 
   return (
     <animated.div style={props} className="gallery-item" onClick={onClick}>
-      <img src={image} alt={`Site Vastu ${index + 1}`} />
+      <img src={image} alt={`Gallery ${index + 1}`} />
       <div className="overlay">
         <UilSearchPlus size="40" className="icon" />
       </div>
