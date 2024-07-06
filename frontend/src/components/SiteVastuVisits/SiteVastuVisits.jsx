@@ -9,6 +9,10 @@ import 'react-image-lightbox/style.css';
 import guru1 from '../../guruimg/1.jpg';
 import guru2 from '../../guruimg/2.jpg';  
 import guru3 from '../../guruimg/3.jpg';
+import guru4 from '../../guruimg/4.jpg';
+import guru5 from '../../guruimg/5.jpg';
+import guru6 from '../../guruimg/6.jpg';
+
 // Import images from siteVastu
 import image1 from '../../siteVastu/1.jpg';
 import image2 from '../../siteVastu/2.jpg';
@@ -27,7 +31,7 @@ const SiteVastuVisits = () => {
   ];
 
   const myGurujiImages = [
-    guru1, guru2, guru3
+    guru1, guru2, guru3, guru4, guru5, guru6
   ];
 
   const [isOpen, setIsOpen] = useState(false);
