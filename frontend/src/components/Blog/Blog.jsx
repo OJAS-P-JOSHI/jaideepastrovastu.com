@@ -44,7 +44,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await fetch('https://jaideepastrovastu-com.onrender.com/api/blogs');
+        const response = await fetch('https://jaideepastrovastu.onrender.com/api/blogs');
         const data = await response.json();
 
         setBlogs((prevBlogs) => [...prevBlogs, ...data]);

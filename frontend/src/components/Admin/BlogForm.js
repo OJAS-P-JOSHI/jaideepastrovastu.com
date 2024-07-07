@@ -10,7 +10,7 @@ const BlogForm = () => {
     const newBlog = { title, content };
 
     try {
-      const response = await fetch('https://jaideepastrovastu-com.onrender.com/api/blogs', {
+      const response = await fetch('https://jaideepastrovastu.onrender.com/api/blogs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

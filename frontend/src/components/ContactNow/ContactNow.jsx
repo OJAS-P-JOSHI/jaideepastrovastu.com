@@ -23,7 +23,7 @@ const ContactNow = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://jaideepastrovastu-com.onrender.com/api/contact', {
+            const response = await fetch('https://jaideepastrovastu.onrender.com/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

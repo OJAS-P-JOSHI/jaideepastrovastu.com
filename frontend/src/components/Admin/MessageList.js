@@ -6,7 +6,7 @@ const MessageList = () => {
 
   useEffect(() => {
     const fetchMessages = async () => {
-      const response = await fetch('https://jaideepastrovastu-com.onrender.com/api/messages');
+      const response = await fetch('https://jaideepastrovastu.onrender.com/api/messages');
       const data = await response.json();
       setMessages(data);
     };
