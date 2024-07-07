@@ -12,9 +12,7 @@ const adminRoutes = require('./routes/adminRoutes');
 const app = express();
 
 const allowedOrigins = [
-  'https://jaideepastrovastu-crf69oe91-ojas-p-joshis-projects.vercel.app',
-  'https://testjay.vercel.app',
-  'https://jaideepastrovastu-ojas-p-joshis-projects.vercel.app'
+  'https://jaideepastrovastu.com'
 ];
 
 const corsOptions = {
