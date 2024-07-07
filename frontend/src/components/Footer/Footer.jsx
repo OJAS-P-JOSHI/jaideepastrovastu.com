@@ -67,6 +67,12 @@ const Footer = () => {
             title="Ujjain Location"
           ></iframe>
         </div>
+        <div className="f-bottom">
+          <p>&copy; {new Date().getFullYear()} Ojas P Joshi. All rights reserved.</p>
+          <p>This website was created by Ojas P Joshi and deployed on 7 July 2024 at 12:07 PM.</p>
+          <p>If you find any bug in the website, contact me at <a href="mailto:ojaspjoshi1729@gmail.com">ojaspjoshi1729@gmail.com</a> or call <a href="tel:+919325773460">+91 93257 73460</a>.</p>
+          <p>If you want to make such websites, contact me on above given details</p>
+        </div>
       </div>
     </div>
   );
