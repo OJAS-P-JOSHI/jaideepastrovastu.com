@@ -49,7 +49,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           <span className={fadeProp}>{currentText}</span>
-          <span>Jaideep Sharma here, explore Jyotish, Astronomy & Numerology at JaideepAstroVastu.com.</span>
+          <span>Jaideep Sharma here, explore Astrology, Numerology and Vaastu here at JaideepAstroVastu.com.</span>
           <div className="i-details">
             <span><UilStar size="20" color="#FFD700" /> I combine traditional Jyotish practices with modern insights to provide practical guidance.</span>
             <span><UilBalanceScale size="20" color="#FFD700" />I help clients achieve harmony and well-being through personalized Vastu recommendations.</span>

@@ -140,6 +140,21 @@ import gemImage28 from '../../imggem/28.jpg';
 import gemImage29 from '../../imggem/29.jpg';
 import gemImage30 from '../../imggem/30.jpg';
 
+// Import images from friendimg
+import friendImage1 from '../../friendimg/1.jpg';
+import friendImage2 from '../../friendimg/2.jpg';
+import friendImage3 from '../../friendimg/3.jpg';
+import friendImage4 from '../../friendimg/4.jpg';
+import friendImage5 from '../../friendimg/5.jpg';
+import friendImage6 from '../../friendimg/6.jpg';
+import friendImage7 from '../../friendimg/7.jpg';
+import friendImage8 from '../../friendimg/8.jpg';
+import friendImage9 from '../../friendimg/9.jpg';
+import friendImage10 from '../../friendimg/10.jpg';
+import friendImage11 from '../../friendimg/11.jpg';
+import friendImage12 from '../../friendimg/12.jpg';
+
+
 const PoojaGallery = () => {
   const images = [
     image1, image2, image3, image4, image5, image6, image7, image8, image9, image10,
@@ -168,6 +183,11 @@ const PoojaGallery = () => {
     gemImage30
   ];
 
+  const friendImages = [
+    friendImage1, friendImage2, friendImage3, friendImage4, friendImage5, friendImage6,
+    friendImage7, friendImage8, friendImage9, friendImage10, friendImage11, friendImage12
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const [galleryType, setGalleryType] = useState('pooja'); // Track gallery type
@@ -178,7 +198,7 @@ const PoojaGallery = () => {
     setIsOpen(true);
   };
 
-  const displayedImages = galleryType === 'pooja' ? images : galleryType === 'article' ? articleImages : gemImages;
+  const displayedImages = galleryType === 'pooja' ? images : galleryType === 'article' ? articleImages : galleryType === 'gem' ? gemImages : friendImages;
 
   return (
     <div className="pooja-gallery">
@@ -200,6 +220,13 @@ const PoojaGallery = () => {
       <div className="gallery articles-gallery">
         {articleImages.map((image, index) => (
           <GalleryItem key={index} image={image} index={index} onClick={() => handleImageClick(index, 'article')} />
+        ))}
+      </div>
+
+      <h1>Friends and Well Known People</h1>
+      <div className="gallery">
+        {friendImages.map((image, index) => (
+          <GalleryItem key={index} image={image} index={index} onClick={() => handleImageClick(index, 'friend')} />
         ))}
       </div>
 
