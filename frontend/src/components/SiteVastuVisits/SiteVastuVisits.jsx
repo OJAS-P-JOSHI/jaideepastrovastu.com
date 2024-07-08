@@ -33,7 +33,7 @@ const SiteVastuVisits = () => {
   ];
 
   const myGurujiImages = [
-    guru5, guru2, guru3,guru1,guru8,guru7, guru4, guru6  
+    guru5, guru2, guru3,guru1,guru8,guru4, guru7, guru6  
   ];
 
   const [isOpen, setIsOpen] = useState(false);
