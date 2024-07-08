@@ -6,7 +6,7 @@ const BlogList = () => {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const response = await fetch('https://jaideepastrovastu.onrender.com/api/blogs');
+      const response = await fetch('https://jaideepastrovastu-com.onrender.com/api/blogs');
       const data = await response.json();
       setBlogs(data);
     };
@@ -15,7 +15,7 @@ const BlogList = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`https://jaideepastrovastu.onrender.com/api/blogs/${id}`, {
+      const response = await fetch(`https://jaideepastrovastu-com.onrender.com/api/blogs/${id}`, {
         method: 'DELETE',
       });
 

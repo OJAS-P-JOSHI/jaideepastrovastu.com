@@ -12,6 +12,8 @@ import guru3 from '../../guruimg/3.jpg';
 import guru4 from '../../guruimg/4.jpg';
 import guru5 from '../../guruimg/5.jpg';
 import guru6 from '../../guruimg/6.jpg';
+import guru7 from '../../guruimg/7.jpg';
+import guru8 from '../../guruimg/8.jpg';
 
 // Import images from siteVastu
 import image1 from '../../siteVastu/1.jpg';
@@ -31,7 +33,7 @@ const SiteVastuVisits = () => {
   ];
 
   const myGurujiImages = [
-    guru5, guru2, guru3,guru1, guru4, guru6  
+    guru5, guru2, guru3,guru1,guru8,guru7, guru4, guru6  
   ];
 
   const [isOpen, setIsOpen] = useState(false);
