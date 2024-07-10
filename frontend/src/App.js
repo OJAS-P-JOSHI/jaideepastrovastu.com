@@ -10,7 +10,7 @@ import Footer from './components/Footer/Footer';
 import Blog from './components/Blog/Blog';
 import PoojaGallery from './components/PoojaGallery/PoojaGallery';
 import ServicesPage from './components/ServicesPage/ServicesPage';
-import ContactNow from './components/ContactNow/ContactNow';
+import Contact from './components/Contact/Contact';
 import Admin from './components/Admin/Admin'; // Import the Admin component
 import './App.css';
 import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // Import the new component
@@ -37,7 +37,7 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/pooja-gallery" element={<PoojaGallery />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact-now" element={<ContactNow />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/admin/*" element={<Admin />} /> 
         </Routes>
         <Footer />
