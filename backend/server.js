@@ -12,7 +12,8 @@ const adminRoutes = require('./routes/adminRoutes');
 const app = express();
 
 const allowedOrigins = [
-  'https://jaideepastrovastu.com'
+  'https://jaideepastrovastu.com',
+  'https://jaideepastrovastu-66aqzercn-ojas-p-joshis-projects.vercel.app/'
 ];
 
 const corsOptions = {

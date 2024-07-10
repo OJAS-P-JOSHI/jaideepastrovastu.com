@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   const navigateToContact = () => {
-    navigate("/contact-now");
+    navigate("/contact");
     setMenuOpen(false);
   };
 
