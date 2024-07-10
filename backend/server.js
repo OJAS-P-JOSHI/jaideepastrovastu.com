@@ -31,7 +31,7 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use('/api/blogs', blogRoutes);
-app.use('/api/contact', contactRoutes);
+app.use('/api/contact', contactRoutes); // Ensure this is correct
 app.use('/api/admin', adminRoutes);
 
 mongoose.set('strictQuery', true);
