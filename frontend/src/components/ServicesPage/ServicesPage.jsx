@@ -46,7 +46,7 @@ const services = [
   { name: "मंगल शांति पूजन", price: "21000", image: image8 },
   { name: "नवग्रह शांति पूजन", price: "21000", image: image9 },
   { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "35000", image: image10 },
-  { name: "कुंम्भ विवाह और अर्क विवाह  पूर्ण विधान", price: "21000", image: image11 },
+  { name: "कुंम्भ विवाह और अर्क विवाह  पूर्ण विधान", price: "31000", image: image11 },
   { name: "एक दिवसीय वास्तु पूजन", price: "31000", image: image12 },
   { name: "तीन दिवसीय वास्तु पूजन", price: "51000", image: image13 },
   { name: "नवचंडी महायज्ञ", price: "51000", image: image14 },
