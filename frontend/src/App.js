@@ -16,6 +16,8 @@ import './App.css';
 import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // Import the new component
 import News from './components/News/News';
 import About from './components/About/About';
+import { SpeedInsights } from '@vercel/speed-insights/react'; // Import SpeedInsights
+
 
 
 
@@ -41,6 +43,8 @@ function App() {
           <Route path="/admin/*" element={<Admin />} /> 
         </Routes>
         <Footer />
+        <SpeedInsights />
+
       </div>
     </Router>
   );
