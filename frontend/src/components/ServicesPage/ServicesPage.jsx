@@ -50,7 +50,7 @@ const services = [
   { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "35000", image: image10 },
   { name: "कुंम्भ विवाह और अर्क विवाह पूर्ण विधान", price: "31000", image: image11 },
   { name: "पितृ दोष शांति विधान", price: "21000 ", image: image12 }, // New service
-  { name: "नारायणनागबली विधान", price: "51000 ", image: image13 }, // New service
+  { name: "नारायण नागबली विधान", price: "51000 ", image: image13 }, // New service
   { name: "एक दिवसीय वास्तु पूजन", price: "31000", image: image14 },
   { name: "तीन दिवसीय वास्तु पूजन", price: "51000", image: image15 },
   { name: "नवचंडी महायज्ञ", price: "51000", image: image16 },
