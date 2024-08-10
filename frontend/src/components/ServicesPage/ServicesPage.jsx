@@ -27,52 +27,52 @@ import image23 from '../../img1/23.jpg';
 import image24 from '../../img1/24.jpg';
 import image25 from '../../img1/25.jpg';
 import image26 from '../../img1/26.jpg';
-import image27 from '../../img1/27.jpg'; // Importing new images
+import image27 from '../../img1/27.jpg';
 import image28 from '../../img1/28.jpg';
 import image29 from '../../img1/29.jpg';
 import image30 from '../../img1/30.jpg';
 import image31 from '../../img1/31.jpg';
-import image32 from '../../img1/32.jpg'; // New image
+import image32 from '../../img1/32.jpg';
 import image33 from '../../img1/33.jpg';
 import image34 from '../../img1/34.jpg';
 import image35 from '../../img1/35.jpg';
 
 const services = [
-  { name: "कालसर्प शांति पूजन", price: "21000", image: image1 },
-  { name: "चांडाल योग शांति", price: "21000", image: image2 },
-  { name: "अंगारक योग शांति", price: "21000", image: image3 },
-  { name: "ग्रहण योग शान्ति", price: "21000", image: image4 },
-  { name: "नक्षत्र दोष शांति", price: "21000", image: image5 },
-  { name: "योग दोष शांति", price: "21000", image: image6 },
-  { name: "करण दोष शांति", price: "21000", image: image7 },
-  { name: "मंगल शांति पूजन", price: "21000", image: image8 },
-  { name: "नवग्रह शांति पूजन", price: "21000", image: image9 },
-  { name: "सभी प्रकार के दोष निवारण शांति जप सहित", price: "35000", image: image10 },
-  { name: "कुंम्भ विवाह और अर्क विवाह पूर्ण विधान", price: "31000", image: image11 },
-  { name: "पितृ दोष शांति विधान", price: "21000 ", image: image12 }, // New service
-  { name: "नारायण नागबली विधान", price: "51000 ", image: image13 }, // New service
-  { name: "एक दिवसीय वास्तु पूजन", price: "31000", image: image14 },
-  { name: "तीन दिवसीय वास्तु पूजन", price: "51000", image: image15 },
-  { name: "नवचंडी महायज्ञ", price: "51000", image: image16 },
-  { name: "महामृत्युंजय अनुष्ठान", price: "55000", image: image17 },
-  { name: "बगुलामखी अनुष्ठान", price: "55000", image: image18 },  
-  { name: "ज्योतिष परामर्श", price: "1100", image: image19 },
-  { name: "सभी प्रकार के मुहूर्त", price: "1100", image: image20 },
-  { name: "जन्मपत्रिका विवेचना", price: "1100", image: image21 },
-  { name: "गुण एवं कुंडली मिलान", price: "2100", image: image22 },
-  { name: "जन्म पत्रिका निर्माण", price: "2500", image: image23 },
-  { name: "भवन वास्तु निरीक्षण", price: "11000", image: image24 },
-  { name: "भूमिगतजल परीक्षण", price: "11000", image: image25 },
-  { name: "वास्तु अनुरूप भवन नक्शे निर्माण", price: "21000", image: image26 },
-  { name: "सम्पुटित नवचंडी महायज्ञ", price: "125000", image: image27 },
-  { name: "शतचंडी महायज्ञ", price: "150000", image: image28 },
-  { name: "लघुरुद्र अनुष्ठान", price: "51000", image: image29 },
-  { name: "अतिरुद्र अनुष्ठान", price: "125000", image: image30 },
-  { name: "महारुद्र अनुष्ठान", price: "225000", image: image31 },
-  { name: "प्राणप्रतिष्ठा महायज्ञ", price: "125000", image: image32 },
-  { name: "मूर्तिप्राण प्रतिष्ठा महायज्ञ", price: "250000", image: image33 },
-  { name: "पत्रिका एव राशि अनुसार रत्न धारण", price: "21000", image: image34 }, // New service
-  { name: "बिना तोड़ फोड़ के वास्तुदोष का सुधार", price: "21000", image: image35 }, // New service
+  { name: "कालसर्प शांति पूजन", image: image1 },
+  { name: "चांडाल योग शांति", image: image2 },
+  { name: "अंगारक योग शांति", image: image3 },
+  { name: "ग्रहण योग शान्ति", image: image4 },
+  { name: "नक्षत्र दोष शांति", image: image5 },
+  { name: "योग दोष शांति", image: image6 },
+  { name: "करण दोष शांति", image: image7 },
+  { name: "मंगल शांति पूजन", image: image8 },
+  { name: "नवग्रह शांति पूजन", image: image9 },
+  { name: "सभी दोष निवारण शांति जप सहित", image: image10 },
+  { name: "कुंम्भ विवाह और अर्क विवाह पूर्ण विधान", image: image11 },
+  { name: "पितृ दोष शांति विधान", image: image12 },
+  { name: "नारायण नागबली विधान", image: image13 },
+  { name: "एक दिवसीय वास्तु पूजन", image: image14 },
+  { name: "तीन दिवसीय वास्तु पूजन", image: image15 },
+  { name: "नवचंडी महायज्ञ", image: image16 },
+  { name: "महामृत्युंजय अनुष्ठान", image: image17 },
+  { name: "बगुलामखी अनुष्ठान", image: image18 },
+  { name: "ज्योतिष परामर्श", image: image19 },
+  { name: "सभी प्रकार के मुहूर्त", image: image20 },
+  { name: "जन्मपत्रिका विवेचना", image: image21 },
+  { name: "गुण एवं कुंडली मिलान", image: image22 },
+  { name: "जन्म पत्रिका निर्माण", image: image23 },
+  { name: "भवन वास्तु निरीक्षण", image: image24 },
+  { name: "भूमिगतजल परीक्षण", image: image25 },
+  { name: "वास्तु अनुरूप भवन नक्शे निर्माण", image: image26 },
+  { name: "सम्पुटित नवचंडी महायज्ञ", image: image27 },
+  { name: "शतचंडी महायज्ञ", image: image28 },
+  { name: "लघुरुद्र अनुष्ठान", image: image29 },
+  { name: "अतिरुद्र अनुष्ठान", image: image30 },
+  { name: "महारुद्र अनुष्ठान", image: image31 },
+  { name: "प्राणप्रतिष्ठा महायज्ञ", image: image32 },
+  { name: "मूर्तिप्राण प्रतिष्ठा महायज्ञ", image: image33 },
+  { name: "पत्रिका एव राशि अनुसार रत्न धारण", image: image34 },
+  { name: "बिना तोड़ फोड़ के वास्तुदोष का सुधार", image: image35 },
 ];
 
 const ServicesPage = () => {
@@ -92,7 +92,6 @@ const ServicesPage = () => {
               <div className="service-info">
                 <div className="service-details">
                   <h2>{service.name}</h2>
-                  <p>Price: {service.price} रु</p>
                 </div>
                 <button className="quick-contact" onClick={handleQuickContact}>
                   Contact Now
