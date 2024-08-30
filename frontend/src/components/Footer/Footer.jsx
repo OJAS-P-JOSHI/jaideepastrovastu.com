@@ -14,6 +14,8 @@ const Footer = () => {
           <div className="f-section">
             <h3>Office</h3>
             <p>205, 206, Indraprasth Tower, MG Road, Indore, MP</p>
+            <p>302, Third Floor, Abency Tower, Zanjeerwala Palasia, Indore</p>
+
             <p>Office, 202 A 2nd floor Yug Prabhat Parisar, 10 Press Complex AB Road Indore 452011</p>
             <p>6, Zone One, MP Nagar, Bhopal, (MP)</p>
             <p>B-907, 9th Floor, Buland Heights, Crossing Republic, Ghaziabad (UP)</p>
