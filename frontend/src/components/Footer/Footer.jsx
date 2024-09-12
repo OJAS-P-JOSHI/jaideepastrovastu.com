@@ -23,8 +23,8 @@ const Footer = () => {
             <p>Mangalnath Road, Ujjain</p>
             <p>Gokul Dham Nagar, Near Aditya Nagar, AB Road, Shajapur (MP)</p>
             <h3>Phone Number</h3>
-            <p>+91 98261 90941</p>
-            <p>+91 9826200041</p>
+            <p>+91 9826190941</p>
+            <p>+91 9826200941 </p>
           </div>
           <div className="f-section">
             <h3>Links</h3>
