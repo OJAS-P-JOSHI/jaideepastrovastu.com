@@ -34,6 +34,9 @@ const Footer = () => {
               <li><a href="/blogs">Blogs</a></li>
               <li><a href="/pooja-gallery">Pooja Gallery</a></li>
               <li><a href="/contact-now">Contact</a></li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
+              <li><a href="/refund-policy">Refund Policy</a></li>
             </ul>
           </div>
           <div className="f-section f-icons">
@@ -69,11 +72,6 @@ const Footer = () => {
             referrerPolicy="no-referrer-when-downgrade"
             title="Ujjain Location"
           ></iframe>
-        </div>
-        <div className="f-bottom">
-          <p>&copy; {new Date().getFullYear()} Ojas P Joshi. All rights reserved.</p>
-          <p>This website was created by Ojas P Joshi and deployed on 7 July 2024 at 12:07 PM.</p>
-          <p>If you find any bug in the website, contact me at <a href="mailto:ojaspjoshi1729@gmail.com">ojaspjoshi1729@gmail.com</a> or call <a href="tel:+919325773460">+91 93257 73460</a>.</p>
         </div>
       </div>
     </div>

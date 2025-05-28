@@ -10,28 +10,8 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
-  const navigateToHome = () => {
-    navigate("/");
-    setMenuOpen(false);
-  };
-
-  const navigateToBlogs = () => {
-    navigate("/blogs");
-    setMenuOpen(false);
-  };
-
-  const navigateToPoojaGallery = () => {
-    navigate("/pooja-gallery");
-    setMenuOpen(false);
-  };
-
-  const navigateToServices = () => {
-    navigate("/services");
-    setMenuOpen(false);
-  };
-
-  const navigateToContact = () => {
-    navigate("/contact-now");
+  const navigateTo = (path) => {
+    navigate(path);
     setMenuOpen(false);
   };
 
@@ -44,28 +24,43 @@ const Navbar = () => {
         <div className={`n-list ${menuOpen ? "open" : ""}`}>
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <a href="/" onClick={(e) => { e.preventDefault(); navigateToHome(); }}>
+              <a href="/" onClick={(e) => { e.preventDefault(); navigateTo("/"); }}>
                 Home
               </a>
             </li>
             <li>
-              <a href="/services" onClick={(e) => { e.preventDefault(); navigateToServices(); }}>
+              <a href="/services" onClick={(e) => { e.preventDefault(); navigateTo("/services"); }}>
                 Services
               </a>
             </li>
             <li>
-              <a href="/blogs" onClick={(e) => { e.preventDefault(); navigateToBlogs(); }}>
+              <a href="/blogs" onClick={(e) => { e.preventDefault(); navigateTo("/blogs"); }}>
                 Blogs
               </a>
             </li>
             <li>
-              <a href="/pooja-gallery" onClick={(e) => { e.preventDefault(); navigateToPoojaGallery(); }}>
-                Pooja Gallery
+              <a href="/pooja-gallery" onClick={(e) => { e.preventDefault(); navigateTo("/pooja-gallery"); }}>
+                Gallery
               </a>
             </li>
             <li>
-              <a href="/contact-now" onClick={(e) => { e.preventDefault(); navigateToContact(); }}>
+              <a href="/contact-now" onClick={(e) => { e.preventDefault(); navigateTo("/contact-now"); }}>
                 Contact
+              </a>
+            </li>
+            <li>
+              <a href="/privacy-policy" onClick={(e) => { e.preventDefault(); navigateTo("/privacy-policy"); }}>
+                Privacy
+              </a>
+            </li>
+            <li>
+              <a href="/terms-and-conditions" onClick={(e) => { e.preventDefault(); navigateTo("/terms-and-conditions"); }}>
+                Terms
+              </a>
+            </li>
+            <li>
+              <a href="/refund-policy" onClick={(e) => { e.preventDefault(); navigateTo("/refund-policy"); }}>
+                Refund
               </a>
             </li>
           </ul>
