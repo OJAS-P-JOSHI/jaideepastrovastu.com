@@ -17,9 +17,9 @@ import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // I
 import News from './components/News/News';
 import About from './components/About/About';
 import { SpeedInsights } from '@vercel/speed-insights/react'; // Import SpeedInsights
-
-
-
+import PrivacyPolicy from './components/Legal/PrivacyPolicy';
+import TermsAndConditions from './components/Legal/TermsAndConditions';
+import RefundPolicy from './components/Legal/RefundPolicy';
 
 function App() {
   return (
@@ -41,10 +41,12 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact-now" element={<ContactNow />} />
           <Route path="/admin/*" element={<Admin />} /> 
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
         <Footer />
         <SpeedInsights />
-
       </div>
     </Router>
   );
