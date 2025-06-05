@@ -20,6 +20,8 @@ import { SpeedInsights } from '@vercel/speed-insights/react'; // Import SpeedIns
 import PrivacyPolicy from './components/Legal/PrivacyPolicy';
 import TermsAndConditions from './components/Legal/TermsAndConditions';
 import RefundPolicy from './components/Legal/RefundPolicy';
+import ShippingAndDelivery from './components/Legal/ShippingAndDelivery';
+import ContactUs from './components/Legal/ContactUs';
 
 function App() {
   return (
@@ -44,6 +46,8 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/shipping-and-delivery" element={<ShippingAndDelivery />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer />
         <SpeedInsights />
