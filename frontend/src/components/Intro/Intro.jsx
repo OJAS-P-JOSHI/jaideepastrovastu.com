@@ -68,10 +68,7 @@ const Intro = () => {
               <UilWhatsapp size="40" color="#FCA61F" />
               <span>WhatsApp</span>
             </a>
-            <a href="tel:+919826190941">
-              <UilPhone size="40" color="#FCA61F" />
-              <span>Phone</span>
-            </a>
+       
             <a href="https://www.youtube.com/@jyotishacharyjaideepsharma1621" target="_blank" rel="noopener noreferrer">
               <UilYoutube size="40" color="#FCA61F" />
               <span>YouTube</span>
