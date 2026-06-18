@@ -17,6 +17,7 @@ import SiteVastuVisits from './components/SiteVastuVisits/SiteVastuVisits'; // I
 import News from './components/News/News';
 import About from './components/About/About';
 import { SpeedInsights } from '@vercel/speed-insights/react'; // Import SpeedInsights
+import { Analytics } from '@vercel/analytics/react'; // Import Analytics
 import PrivacyPolicy from './components/Legal/PrivacyPolicy';
 import TermsAndConditions from './components/Legal/TermsAndConditions';
 import RefundPolicy from './components/Legal/RefundPolicy';
@@ -51,6 +52,7 @@ function App() {
         </Routes>
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </div>
     </Router>
   );
